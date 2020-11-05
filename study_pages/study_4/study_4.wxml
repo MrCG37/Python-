@@ -1,0 +1,14 @@
+<image class="phimg" src="cloud://pytestmodel-3qdd0.7079-pytestmodel-3qdd0-1301778314/image/pd2-4.png"></image>
+ <view class="page__bd">
+    <view class="section section_gap" wx:for-items="{{array}}" wx:for-item="item">
+     <view class="section__title" style="color:red">{{item.text}}</view>
+      <view class="section__ctn">
+        <image class="ima" mode="{{item.mode}}" src="{{item.src}}"></image>
+      </view>
+    </view>
+  </view>
+ <view class="zhuan">
+  <button bindtap="lastQuestion">上一章</button>
+  <button bindtap="ceshi" class="ceshi">测试</button>
+  <button bindtap="nextQuestion">下一章</button>
+</view>

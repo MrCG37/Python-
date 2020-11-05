@@ -1,0 +1,98 @@
+<!-->
+1.0 该部分为学习界面，教程内容为贴图，题目规模为每章五道，进度条目前不具备移动功能，可留作后续升级用。 教程部分需更新，排版等可进一步优化。 题目部分缺少变量章节、排版需优化、题量增加为后续版本。
+<-->
+
+ 
+  <scroll-view class='scbg' scroll-y='true'>
+    <view> <image class="phimg" src="cloud://pytestmodel-3qdd0.7079-pytestmodel-3qdd0-1301778314/image/pd2-3.png"></image></view>
+    <view class="box">
+      <view class="title">
+        <text class="tit">简介</text>
+      </view>
+      <view class="right">
+        <text class="jindu">进度：</text>
+        <view class="jindutiao">
+          <progress percent="{{progress}}" color="#10AEFF" show-info="true" />
+        </view>
+        <view class="button">
+          <button class="b1" bindtap="f1">学习</button>
+          <button class="b2" bindtap="f1_">测试</button>
+        </view>
+      </view>
+    </view>
+    <view class="box">
+      <view class="title">
+        <text class="tit">变量</text>
+      </view>
+      <view class="right">
+        <text class="jindu">进度：</text>
+        <view class="jindutiao">
+          <progress percent="{{progress}}" color="#10AEFF" show-info="true" />
+        </view>
+        <view class="button">
+          <button class="b1" bindtap="f2">学习</button>
+          <button class="b2" bindtap="f2_">测试</button>
+        </view>
+      </view>
+    </view>
+    <view class="box">
+      <view class="title">
+        <text class="tit3">输入&输出</text>
+      </view>
+      <view class="right">
+        <text class="jindu">进度：</text>
+        <view class="jindutiao">
+          <progress percent="{{progress}}" color="#10AEFF" show-info="true" />
+        </view>
+        <view class="button">
+          <button class="b1" bindtap="f3">学习</button>
+          <button class="b2" bindtap="f3_">测试</button>
+        </view>
+      </view>
+    </view>
+    <view class="box">
+      <view class="title">
+        <text class="tit">分支</text>
+      </view>
+      <view class="right">
+        <text class="jindu">进度：</text>
+        <view class="jindutiao">
+          <progress percent="{{progress}}" color="#10AEFF" show-info="true" />
+        </view>
+        <view class="button">
+          <button class="b1" bindtap="f4">学习</button>
+          <button class="b2" bindtap="f4_">测试</button>
+        </view>
+      </view>
+    </view>
+    <view class="box">
+      <view class="title">
+        <text class="tit">循环</text>
+      </view>
+      <view class="right">
+        <text class="jindu">进度：</text>
+        <view class="jindutiao">
+          <progress percent="{{progress}}" color="#10AEFF" show-info="true" />
+        </view>
+        <view class="button">
+          <button class="b1" bindtap="f5">学习</button>
+          <button class="b2" bindtap="f5_">测试</button>
+        </view>
+      </view>
+    </view>
+    <view class="box">
+      <view class="title">
+        <text class="tit">列表</text>
+      </view>
+      <view class="right">
+        <text class="jindu">进度：</text>
+        <view class="jindutiao">
+          <progress percent="{{progress}}" color="#10AEFF" show-info="true" />
+        </view>
+        <view class="button">
+          <button class="b1" bindtap="f6">学习</button>
+          <button class="b2" bindtap="f6_">测试</button>
+        </view>
+      </view>
+    </view>
+  </scroll-view>

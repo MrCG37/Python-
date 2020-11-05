@@ -1,0 +1,60 @@
+ <view class="container">
+ 	<image class='background' src="../../image2/new-1.png"></image>
+ 	<view class="load">
+ 		<image class="avatar" src="{{touxiang}}" background-size="cover"></image>
+ 		<button class="loadbutton" open-type="getUserInfo" bindgetuserinfo="getMyInfo">
+ 			<!-- <button class="loadbutton" bindtap="f1"> -->
+ 			<text class="nickname">{{name}}</text>
+ 		</button>
+ 	</view>
+ 	<view class="my_list">
+ 		<block wx:for="{{my_ListInfo}}">
+ 			<view class="weui_cell" bindtap="fa">
+ 				<view class="weui_cell_hd">
+ 					<image src="{{item.icon}}"></image>
+ 				</view>
+ 				<view class="weui_cell_bd">
+ 					<view class="weui_cell_bd_t"> {{item.text}} </view>
+ 				</view>
+ 			</view>
+ 		</block>
+ 	</view>
+	<view class="my_list">
+ 		<block wx:for="{{my_ListInfo_1}}">
+ 			<view class="weui_cell" bindtap="fa_2">
+ 				<view class="weui_cell_hd">
+ 					<image src="{{item.icon}}"></image>
+ 				</view>
+ 				<view class="weui_cell_bd">
+ 					<view class="weui_cell_bd_t"> {{item.text}} </view>
+ 				</view>
+ 			</view>
+ 		</block>
+ 	</view>
+ 	<view class="my_list">
+ 		<block wx:for="{{my_ListInfo_2}}">
+ 			<view class="weui_cell" bindtap="fa_2">
+ 				<view class="weui_cell_hd">
+ 					<image src="{{item.icon}}"></image>
+ 				</view>
+ 				<view class="weui_cell_bd">
+ 					<view class="weui_cell_bd_t"> {{item.text}} </view>
+ 				</view>
+ 			</view>
+ 		</block>
+
+ 	</view>
+ 	 <view class="my_list">
+ 		<block wx:for="{{my_ListInfo_3}}">
+ 			<view class="weui_cell" bindtap="fa_3">
+ 				<view class="weui_cell_hd">
+ 					<image src="{{item.icon}}"></image>
+ 				</view>
+ 				<view class="weui_cell_bd">
+ 					<view class="weui_cell_bd_t"> {{item.text}} </view>
+ 				</view>
+ 			</view>
+ 		</block>
+ 	</view> 
+ 	<!-- <view class="advice" bindtap="advice">{{advice}}</view> -->
+ </view>

@@ -1,0 +1,47 @@
+/* pages/send/send.wxss */
+page{
+  background-color: #efefef;
+}
+
+.textarea{
+  width: 100%;
+  background-color: #fff;
+}
+
+.in{
+  width:96%;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  font-size: 38rpx;
+}
+
+.click{
+  width:84%;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-radius: 10rpx;
+  margin: auto;
+  margin-top: 70rpx;
+  margin-left: 8%;
+  margin-right: 8%;
+  background-color: #f89797e6;
+  text-align: center;
+  color: white;
+  font-size: 33rpx;
+}
+.lian{
+  padding-top: 30rpx;
+}
+.haha{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.QR{
+  padding-top: 40rpx;
+  width: 375rpx;
+  height: 375rpx;
+}

@@ -1,0 +1,159 @@
+@import"/pages/plus/plus";
+
+page {
+  background-color: #EFEFEF;
+}
+.phimg{
+  width: 100%;
+  height: 300rpx;
+}
+.scbg {
+  background-color: #EFEFEF;
+  width: 100%;
+  height: 100%;
+  left: 0rpx;
+  right: 0rpx;
+  position: absolute;
+}
+
+.box {
+  width: 100%;
+  background-color: white;
+  padding-top: 30rpx;
+  border-bottom: 20rpx solid rgb(222, 222, 222);
+}
+
+.firstblock {
+  /* height: 150rpx; */
+  margin-bottom: 30rpx;
+  margin-left: 4%;
+  margin-right: 4%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.touxiang {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 100rpx;
+}
+
+.person {
+  width: 75%;
+  height: 100rpx;
+  margin-left: 30rpx;
+  /* margin-top: 10rpx; */
+}
+
+.name {
+  display: flex;
+  justify-content: flex-start;
+  /* margin-top: 10rpx; */
+  font-size: 30rpx;
+  flex-direction: row;
+}
+
+.time {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 35rpx;
+  flex-direction: row;
+}
+
+.showname {
+  color: #3F51B5;
+  font-family: PingFangSC-regular;
+  font-weight: bold;
+}
+
+.showtime {
+  font-size: 25rpx;
+  color: #5E5D5D;
+  font-family: PingFangSC-regular;
+}
+
+.secondblock {
+  margin-top: 10rpx;
+  margin-left: 4%;
+  margin-right: 4%;
+  padding-bottom: 20rpx;
+  border-bottom: 5rpx solid #BBBBBB;
+}
+.content{
+  font-size: 32rpx;
+  color: #101010;
+  word-break: break-all;
+  /* 英文状态下的换行 */
+}
+.p_text{
+  background-color: rgba(187, 187, 187, 0.265);
+  margin-left: 4%;
+  margin-right: 4%;
+  padding-bottom: 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+.p{
+  font-size: 27rpx;
+  color: #101010d3;
+  word-break: break-all;
+}
+.thirdblock{
+  height:100%;
+  margin-left: 4%;
+  margin-right: 4%;
+  display: flex;
+  flex-direction: column;
+}
+.zan{
+  margin-top: 20rpx;
+  margin-left: 10rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+.zannum{
+  height: 52rpx;
+  line-height: 50rpx;
+  margin-top: 25rpx;
+  margin-left: 5rpx;
+  font-size: 30rpx;
+  color: pink;
+}
+.release{
+  font-size: 30rpx;
+  background-color: #fff;
+  display: flex;
+  align-items: flex-end; 
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5rpx 0 15rpx 0;
+}
+.releaseInput{
+  color: #ccc;
+}
+.release .text{
+  width: 600rpx;
+  min-height: 25rpx;
+  max-height: 55rpx;
+  line-height: 30rpx;
+  border-width: 15rpx 20rpx;
+  border-style: solid;
+  border-color: #efefef;
+  background-color: #efefef;
+}
+.release .submit{
+  color: #6c0;
+  width: 80rpx;
+  height: 50rpx;
+  line-height: 30rpx;
+  text-align: center;
+  margin-left: 50rpx;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+} 

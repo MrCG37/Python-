@@ -1,0 +1,8 @@
+.phimg {
+  width: 100%;
+  height: 300rpx;
+}
+.a{
+display: flex;
+flex-direction: column;
+}

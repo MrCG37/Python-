@@ -1,0 +1,55 @@
+.timu {
+  text-align: left;
+  margin-top: 40rpx;
+  line-height: 60rpx;
+  font-size: 40rpx;
+}
+.timu_2 {
+  text-align: left;
+  margin-top: 40rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  word-break: break-all;
+}
+.anniu {
+
+  min-height: 100rpx;
+  text-align: left;
+  margin-bottom: 20rpx;
+  line-height: 90rpx;
+  font-size: 35rpx;
+  display: flex;
+  flex-direction: column;
+  word-break: break-all;
+}
+
+.huanti {
+  width: 100%;
+  /* bottom: 300rpx;
+  position: fixed; */
+  display: flex;
+}
+.sc{
+    /* margin-top: 80rpx; */
+    display: flex;
+    justify-content: center;
+} 
+.sc_text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(227, 170, 55);
+  font-size: 35rpx;
+}
+.shoucang {
+  width: 50rpx;
+  height: 50rpx;
+}
+.xianshi{
+  color: rgba(86, 86, 86, 0.662);
+}
+.jifen {
+  margin-left: 10%;
+  /* position: fixed;
+  bottom: 15rpx; */
+}

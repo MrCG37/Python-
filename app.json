@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/shequ/shequ",
+    "pages/study/study",
+    "select_pages/select_1/select_1",
+    "select_pages/select_2/select_2",
+    "select_pages/select_3/select_3",
+    "select_pages/select_4/select_4",
+    "select_pages/select_5/select_5",
+    "pages/tiaozhuan/tiaozhuan",
+    "pages/my/my",
+    "study_pages/study_1/study_1",
+    "pages/send/send",
+    "pages/plus/plus",
+    "pages/logs/logs",
+    "study_pages/study_1_/study_1_",
+    "study_pages/study_2/study_2",
+    "study_pages/study_3/study_3",
+    "study_pages/study_4/study_4",
+    "study_pages/study_5/study_5",
+    "study_pages/study_6/study_6",
+    "pages/wanshan/wanshan"
+
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [{
+        "pagePath": "pages/shequ/shequ",
+        "text": "社区",
+        "iconPath": "image/shequ.png",
+        "selectedIconPath": "image/shequ_blue.png"
+      },
+      {
+        "pagePath": "pages/study/study",
+        "text": "学习",
+        "iconPath": "image/study.png",
+        "selectedIconPath": "image/study_blue.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "个人",
+        "iconPath": "image/mine.png",
+        "selectedIconPath": "image/mine_blue.png"
+      }
+    ]
+  }
+}

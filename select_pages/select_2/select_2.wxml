@@ -1,0 +1,21 @@
+<scroll-view style="margin-left:10rpx;margin-right:10rpx">
+  <view class="timu">{{index+1}}.{{postList[index].name}}</view>
+  <view class="timu_2" style="white-space:pre-wrap">{{postList[index].name2}}</view>
+</scroll-view>
+<scroll-view style=" margin-top: 30rpx;margin-left:20rpx;">
+  <view id='A' class="anniu" bindtap="btnOpClick" style="background-color: {{bcA}};">A.{{postList[index].content[0]}}</view>
+  <view id='B' class="anniu" bindtap="btnOpClick" style="background-color: {{bcB}};">B.{{postList[index].content[1]}}</view>
+  <view id='C' class="anniu" bindtap="btnOpClick" style="background-color: {{bcC}};">C.{{postList[index].content[2]}}</view>
+  <view id='D' class="anniu" bindtap="btnOpClick" style="background-color: {{bcD}};">D.{{postList[index].content[3]}}</view>
+</scroll-view>
+<view class="huanti" style="margin-top:100rpx">
+<button bindtap="lastQuestion">{{shang}}</button>
+<button bindtap="xianshi" class="xianshi">{{ny}}</button>
+<button bindtap="nextQuestion">{{xia}}</button>
+<!-- <button >收藏</button> -->
+</view>
+<view class="sc" bindtap="fcang">
+<text class="sc_text">收藏本题</text>
+<image class="shoucang" src="{{cang_url}}" ></image>
+</view>
+<text class="jifen">积分：每答对一题积2分，目前得分{{defen}}</text> 

@@ -1,0 +1,66 @@
+.phimg {
+  width: 100%;
+  height: 300rpx;
+}
+
+page {
+  background-color: #EFEFEF;
+}
+
+.scbg {
+  background-color: #EFEFEF;
+  width: 100%;
+  height: 100%;
+  left: 0rpx;
+  right: 0rpx;
+  position: absolute;
+}
+
+.box {
+  width: 100%;
+  background-color: white;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+  border-bottom: 10rpx solid #EFEFEF; 
+  display: flex;
+  justify-content: flex-start;
+
+}
+
+.title {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tit {
+  font-size: 40rpx;
+  font-family: PingFangSC-regular;
+  font-weight: bold;
+}
+.tit3 {
+  font-size: 30rpx;
+  font-family: PingFangSC-regular;
+  font-weight: bold;
+}
+
+.right {
+  width: 65%;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+}
+
+.b1 {
+  background-color: chartreuse;
+}
+
+.b2 {
+  background-color: gold;
+}
+

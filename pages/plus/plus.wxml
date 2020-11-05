@@ -1,0 +1,8 @@
+
+<view class="one">
+<view class="one_">
+<image class="img" src="/image2/wuhu.png" bindtap="send"> </image>
+</view>
+</view>
+
+<!--社区界面右下角那个纸飞机-->

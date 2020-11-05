@@ -1,0 +1,16 @@
+.container{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;  
+}
+.gongxi{
+  margin-top: 50rpx;
+}
+.tuzi{
+margin-top: 50rpx;
+}
+.button{
+  margin-top: 50rpx;
+  background-color: aqua;
+}

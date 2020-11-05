@@ -1,0 +1,94 @@
+<!--
+1.0
+该界面评论作为次版功能，主要需实现点赞（与收藏）
+当前问题为点赞与收藏点击一个按钮后全部状态更新
+点赞和收藏均需依靠数据库实现
+-->
+
+<!--
+2.0(5/12 20:32)
+当前已实现从云数据库获取信息并展示至社区页面，需增加实时更新功能以保证添加完数据返回该界面时已实现更新
+遗留问题为匿名用户头像和昵称目前无
+-->
+
+<!--
+2.5(5/14 2:35)
+当前点赞功能尚未完全实现，已实现根据点赞位置获取帖子对应id，但不确定如何更改点赞图标状态
+已初步尝试使用云函数，但出现报错，未解决
+点赞图标状态可通过wx:for调节，但估计仅限于页面初始化时，无法同步进行改变
+下一步需从两方面入手：
+1.具体修改数据库中likes_status值
+2.修改后实时更新图标状态
+——————————————
+云函数的使用是由于用户无法对云数据库中数据执行写操作
+下次将尝试利用云函数修改云数据库中likes_status值，并借助此值执行三元判断
+-->
+
+<!--
+2.75(5/14 12:48)
+当前已实现通过点击实现数据库中likes_status改变，但无法同步其变化情况至视图界面
+-->
+
+<!--
+3.0更新（12:53）
+通过重新加载页面已实现点赞效果，但性能过于低下(加载速度过慢）
+点赞次数暂时无法显示，作为次版本功能
+-->
+
+<view style="margin-top:5rpx">
+	<!--scroll-view can not be refreshed-->
+	<!--<scroll-view class='scbg' scroll-y='true'>-->
+		<view><image class="phimg" src="cloud://pytestmodel-3qdd0.7079-pytestmodel-3qdd0-1301778314/image/pd2-2.png"></image></view>
+		<!--此处showData列表为查询云数据库获取，原测试列表list中保有测试数据-->
+		<block wx:for="{{showData}}" wx:for-item="itemName" wx:for-index="id">
+		<view class="box">
+			<view class="firstblock">
+				<image class="touxiang" src='{{itemName.face_url}}'></image>
+				<view class="person">
+					<view class="name">
+						<text class="showname">{{itemName.username}}</text>
+					</view>
+					<view class="time">
+						<text class="showtime">{{itemName.timestamp}}</text>
+					</view>
+				</view>
+			</view>
+			<view class="secondblock">
+				<text class="content">{{itemName.message}}</text>
+			</view>
+
+      <!--comment area needs to be updated in next version-->
+			<!-- <view class="pinglun">
+			<view class="p_text">
+				<text class="p">{{itemName.p1}}</text>
+				<text class="p">{{itemName.p2}}</text>
+				<text class="p">{{itemName.p3}}</text>
+			</view>
+			</view>  -->
+
+			<view class="thirdblock">
+        <!--likes function part-->
+				<view>
+					<!--<image wx:if="{{itemName.likes_status}}" src="/image/zan_pink.png" class="zan" bindtap="fzan" id='{{itemName._id}}'></image>
+        	<image wx:else src="{{zan_url}}" class="zan" bindtap="fzan" id='{{itemName._id}}'></image>-->
+					<image src="{{zan_url}}" class="zan" bindtap="fzan" id='{{itemName._id}}'></image><!--display without condition-->
+       		<text class="zannum">{{itemName.total_likes}}</text>
+				</view>
+
+        <!--favorite function part-->
+				<!--<image src="{{cang_url}}" class="shoucang" bindtap="fcang" ></image>-->
+
+        <!--comment function part-->
+				 <view class="container">
+        <!--  <button bindtap="bindReply">回复</button> -->
+        <view class="release">
+          <textarea class="text" placeholder-class="releaseInput" value="{{content}}" fixed="true" maxlength="120" show-confirm-bar="{{false}}" cursor-spacing="15" auto-height="true" focus="{{focus}}" placeholder="回复" value="{{content}}" bindinput="contentInput"></textarea>
+          <view class="submit" bindtap="comment">发送</view>
+        </view>
+      </view>
+			</view>
+		</view>
+	</block>
+	<!--</scroll-view>-->
+</view>
+<include src="/pages/plus/plus" />

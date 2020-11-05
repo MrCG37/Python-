@@ -1,0 +1,15 @@
+<!--
+1.0
+该界面为评论发送界面与发布界面（重合），后续实现评论功能时需区分界面
+-->
+
+<!--
+2.0（5.12）
+当前版本已实现评论添加数据至云数据库与页面跳转功能
+跳转后页面刷新已实现
+-->
+
+<view class="textarea">
+  <textarea placeholder="在此分享你的想法~" placeholder-style="color:#8888;font-size:38rpx" maxlength="-1" class="in" bindinput="input"></textarea>
+</view>
+<view id = 'btn' class='click' bindtap="send">发送 biu~</view>

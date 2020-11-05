@@ -1,0 +1,10 @@
+<!--pages/send/send.wxml-->
+<view class="textarea">
+  <textarea placeholder="您的意见是我们前进的动力~" placeholder-style="color:#8888;font-size:38rpx" maxlength="-1" class="in" bindinput="input"></textarea>
+</view>
+<view id = 'btn' class='click' bindtap="send">提交反馈</view>
+<view class="lian">制作组联系方式：</view>
+<view class="haha">
+<text>邮箱联系：cn_mrcg@foxmail.com</text>
+<image class="QR" src="/image2/QR.jpg" mode="aspectFill"></image>
+</view>

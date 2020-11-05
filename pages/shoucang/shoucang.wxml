@@ -1,0 +1,24 @@
+ <!-->
+ 1.0
+ 该页面为进入收藏后的具体页面，尚未完成。
+ 需要连接数据库实现收藏功能，可选择区分题目与帖子？
+ 收藏功能应与openid关联
+ <-->
+ 
+ <view class="container">
+   <view  bindtap="bindViewTap" class="load">
+      <image class="avatar" src="/image/mine.png" background-size="cover"></image>
+    <text class="nickname">请登录</text> 
+  </view>
+   <view class="my_list">
+    <block wx:for="{{my_ListInfo}}">
+        <view class="weui_cell">
+            <view class="weui_cell_hd"><image src="{{item.icon}}"></image></view>
+            <view class="weui_cell_bd">
+                <view class="weui_cell_bd_t"> {{item.text}} </view>
+            </view>
+        </view>
+    </block>
+  </view>
+ </view>
+ 

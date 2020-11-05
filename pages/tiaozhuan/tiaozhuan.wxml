@@ -1,0 +1,5 @@
+<view class="container">
+<text class="gongxi" style="color:red">你完成了本章测试！</text>
+<image class="tuzi" mode="aspectFit" src="cloud://pytestmodel-3qdd0.7079-pytestmodel-3qdd0-1301778314/image/兔子鼓掌.gif"></image>
+<button class="button" bindtap="back">点击返回学习界面</button>
+</view>
